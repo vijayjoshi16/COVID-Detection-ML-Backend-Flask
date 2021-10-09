@@ -50,7 +50,7 @@ def predict():
         }
     ]
     print(js_response)
-    return jsonify(json.dumps(str(js_response)))
+    return json.dumps(str(js_response))
     
     
 @app.route("/test_api", methods=["POST"])
